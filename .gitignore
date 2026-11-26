@@ -1,0 +1,20 @@
+index-dump/target/
+__pycache__/
+
+# Corpora are private and never committed: point the scripts at a tree you have
+# locally. Generated indexer output is never committed either, since `run.sh`
+# reproduces any of it.
+corpus/
+corpus/*.index.txt
+# A capture keeps one file per source, named after its path, so even the names
+# describe a private tree. Nothing under stats/ is committed.
+stats/
+
+# A pinned copy of the maki tree, made with `git archive`. It is a second copy of
+# another repo, so it is never committed here.
+maki-frozen/
+maki-frozen-*/
+
+# Scratch
+work/
+review/

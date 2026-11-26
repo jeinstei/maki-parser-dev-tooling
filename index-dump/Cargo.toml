@@ -1,0 +1,14 @@
+[package]
+name = "index-dump"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+maki-agent = { path = "../maki-frozen/maki-agent" }
+maki-lua = { path = "../maki-frozen/maki-lua" }
+
+[workspace]
+
+[patch.crates-io]
+crossterm = { git = "https://github.com/crossterm-rs/crossterm", rev = "94ed7154e35d24a2f643c61760e1eb05b8ca9e63" }
+syntect = { git = "https://github.com/tontinton/syntect", rev = "01df275f6f25da670e5ba5b7128cb89d03795119" }
